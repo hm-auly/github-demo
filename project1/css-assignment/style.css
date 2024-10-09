@@ -1,0 +1,587 @@
+
+/* -- reset and common code start-- */
+:root{
+    --border-radius: 0.6rem;
+    --box-shadow: 0.1rem 0.2rem 0.8rem rgb(205, 202, 202, 0.5);
+    --transition: all 0.3s; 
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    list-style-type: none;
+    
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+
+}
+
+/* -- reset and common code end-- */
+
+/* -- nav desine start-- */
+.navber{
+    height: 5vw;
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    margin: 0 30px;
+
+    .nav_div1{
+        & h1{
+            font-size: 30px;
+            font-weight: bolder;
+
+        }
+    }
+
+    .nav_div3{
+        display: flex;
+       gap: 10px;
+       justify-content: center;
+       align-items: center;
+       
+       & p{
+        background-color: rgba(174, 173, 171, 0.2);
+        padding: 6px;
+        border-radius: 3px;
+        color: black;
+        font-weight: 700;
+       }
+       & button{
+        background-color: black;
+        color: aliceblue;
+        padding: 5px 10px;
+        border-radius: 100px;
+        font-weight: 700;
+       }
+       & i{
+        font-size: 20px;
+       }
+    }  
+}
+/* -- nav desine end-- */
+
+/* --banner style start */
+.why{
+    margin-top: 0%;
+    border: 2px solid white;
+    padding: 6px;
+    margin: 0 auto;
+    margin-top: 3%;
+    width: 10%;
+    border-radius: 50px;
+   
+    & a{
+        color: white;
+        text-decoration: noe;
+        display: flex;
+        justify-content: center;
+        
+
+    }
+}
+.banner-section{  
+    width: 100%;
+    height: 50vw;
+    margin: 0 auto;
+   
+   background-image: url("images/Rectangle\ 1.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 30px;
+
+    & img{
+        width: 100%;
+        height: auto;
+        border: 0;
+        outline: 0;
+    }
+}
+    .banner_div1{
+        text-align: center;
+        padding-top: 10px;
+        margin-top: 17%;
+        & img {
+            height: auto;
+            width: 3%;
+            object-fit: cover;                    
+        }
+        & h3{
+             display: inline-block;
+             font-size: 25px;
+        }        
+    }
+    .banner_div2{
+        display: flex;
+        gap: 50px;
+        justify-content: center;
+       
+            & div{
+                border-radius: 5px;
+                width: 10%;
+                display: flex;
+                justify-content: space-between;
+                padding: 3px 5px;
+                background-color: hsl(180, 15%, 85%);
+                margin-top: 25px;
+
+                & select{
+                    border: none;
+                    outline: none;
+                    background-color:hsl(180, 15%, 85%);
+                }
+            }          
+        }
+        .banner_submit{
+           margin-top: 20px;
+           width: 100%;
+           padding-bottom: 36px;
+            & input{
+                width: 27%;
+                margin-right: 30px;
+                background-color: hsl(180, 15%, 85%);
+                border: none;
+                padding: 5px;
+                border-radius: 15px;
+            }
+            & button{
+                width: 16%;
+                background-color: rgb(92, 234, 234);
+                padding: 5px;
+                border-radius: 65px;
+            }          
+        }        
+        
+        .banner-container_div {
+         background-color: aliceblue;
+         width: 75%;
+         margin: 0 auto;
+        }
+        .clear-div{
+            content: "";
+            clear: both;
+            display: table;
+         }   
+   /* --banner style ens-- */ 
+
+   /* --sell section start */
+   .sell-section{
+        background-color: rgb(234, 208, 77); 
+       
+        & div{
+            
+            width: 80%;
+            margin: 0 auto;
+
+            & h2{
+                text-align: center;
+                padding: 10px;
+                padding-top: 30px;
+            }
+            & img{
+                width: 100%;
+            }
+        }
+    } 
+  /* --sell section end */
+
+  /* -- featur section start-- */
+
+    .featur-section{
+        margin-top: 40px;
+        & strong{
+            font-size: 20px;
+            margin-left: 40px;                             
+
+        }
+        .featur-container{
+            margin-top: 36px;
+            display: grid;
+            grid-template-columns: 30% 30% 30%;
+            grid-gap: 50px;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            & div{
+                width: 20%;
+            }         
+        }
+      }       
+
+        .featur_div1,  .featur_div2,  .featur_div3{
+           
+           & h4{
+            text-align: center;
+            font-size: 18px;
+            margin-top: 10px;
+            
+            }
+            & img{              
+                display: block;
+                width: 26%;               
+                margin: 0 auto;                                   
+            }
+            & p{
+                margin-top: 10px;
+                text-align: center;
+                font-size: 14px;
+            }
+            & a {
+                margin-top: 20px;
+                display: block;
+                font-size: 15px;
+                text-align: center;
+                color: black;
+              
+            }
+
+        }
+        .featur_btn{
+            display: block;
+            margin: 0 auto;
+            font-size: 13px;
+            padding: 5px;
+            border-radius: 50px;
+            width: 13%;
+            margin-top: 40px;
+            margin-bottom: 25px;
+           }
+
+
+   /* -- featur section end-- */
+
+    /* --Buy section start */
+
+    #buy-section{ 
+        display: grid;
+        grid-template-columns: auto auto;
+        background-color: hsl(180, 15%, 85%);
+
+        .buy_div1{
+            border-right: 1px solid;         
+        }
+        .buy_div1, .buy_div2{
+            & div:first-child{
+                margin-top: 90px;
+            }         
+        }
+        .buy_div1, .buy_div2{
+           & div{
+            display: flex;
+            gap: 15px;
+            align-items: center;
+            margin: 10px;
+            padding: 6px;
+            border: 2px solid;
+            width: 70%;
+            margin-top: 0px;
+            background-color: aliceblue;
+            margin-left: 90px;
+
+            & img{
+                width: 8%;
+                height: 40px;
+            }
+           }
+           .buy_btn{
+            border: none;
+            justify-content: center;
+            background-color: hsl(180, 15%, 85%);
+
+
+            & button{
+                padding: 10px;
+                border-radius: 30px;
+                background-color: black;
+                color: aliceblue;
+            }          
+           }
+        }
+    }
+    
+    /* --Buy section end */
+
+    /* -- com section start -- */
+     
+     .com-section{
+         
+        background-color: rgb(197, 154, 203);
+        padding-bottom: 27px;
+
+        .com-section_container{
+            & p{
+                text-align: center;
+                font-size: 50px;
+                padding: 8%;
+            }
+            & button{
+                display: block;
+                margin: 0 auto;
+                font-size: 18px;
+                padding: 18px;
+                border-radius: 50px;
+                width: 16%;
+                background-color: black;
+                color: aliceblue;
+                padding-bottom: 20px;              
+        }
+     }
+  }
+ /* -- com section end -- */
+ 
+ /* -- footer section start --*/
+
+      .footer-section{
+       background-color: rgb(9, 13, 13);
+       color: aliceblue;
+
+         .footer-top{
+            display: flex;
+            justify-content: center;
+            gap: 50px;
+            padding-top: 40px;
+            padding-bottom: 10px;
+
+            & ul{
+                font-size: 13px;
+                font-family: "Merriweather", serif;
+                font-weight: 300;
+                font-style: normal;
+               & li:first-child{
+                font-size: 13px;
+                font-weight: 600;
+                padding-bottom: 10px;
+               
+               }
+            }
+            .spacio{
+                font-weight: 800; 
+                font-size: 19px;
+            }
+         }
+         .footer-bottom{
+            text-align: center;
+            padding-bottom: 8px;
+    
+            & div{
+                margin: 20px;
+               
+                & a{
+                    color: aliceblue;
+                    text-decoration: none;
+                    margin: 8px;
+                    padding: 10px;
+                }
+                & p{
+                   margin-top: 10px;
+                    font-family: "Libre Baskerville", serif;
+                }
+            }
+         }     
+      }
+
+      /* -- footer section end -- */
+
+
+/* -- responsiv iphone 14 pro mex --*/
+
+@media all and (max-width: 430px) {
+
+           /* nav start */     
+            .navber{
+               height: 10vw;
+               width: 90%;
+               margin-bottom: 10px;
+                                               
+                .nav_div1{
+                    & h1{
+                        font-size: 25px;
+                        font-weight: bold;
+                        width: 5%;                       
+                    }
+                }
+                .nav_div2{
+                    display: none;                   
+                }
+
+                .nav_div3{                                                
+                   & p{                 
+                   font-size: 15px;  
+                   }
+
+                   & button{
+                    font-size: 12px;                                                      
+                   }
+                   & i{
+                    font-size: 16px;
+                   }
+                }  
+            }
+            /* nav end */
+
+            .banner-section{                            
+                background-image: none;     
+                margin:  6px;                                                  
+            }
+
+                .banner_div1{
+                    text-align: center;
+                    padding-top: 10px;
+                    margin-top: 0%;
+                    & img {
+                        width: 7%;                                                       
+                    }
+                    & h3{
+                         font-size: 35px;
+                    }        
+                }
+                .banner_div2{
+                    
+                    flex-direction: column;
+                    gap: 10px;
+                    width: 100%;
+                                                  
+                        & div{                         
+                            width: 100%;                                                  
+                            padding: 13px 10px;                                                                               
+                        }          
+                    }
+                    .banner_submit{
+                       margin-top: 30px;
+                      justify-content: space-between;
+
+                        & input{
+                            width: 65%;
+                            margin-right: 10px;                          
+                            border: 1px solid;
+                            padding: 10px;
+                            border-radius: 5px;
+                            font-size: 20px;
+                        }
+                        & button{
+                            width: 26%;                         
+                            padding: 10px;
+                            font-size: 15px;
+                            font-weight: bolder;
+                        }          
+                    }        
+                    
+                    .banner-container_div {                   
+                     width: 100%;          
+                    }
+                 .clear-div{
+                    content: "";
+                    clear: both;
+                    display: table;
+                 }  
+                 .why{
+                    display: none;
+                 } 
+
+ /* --sell section start */
+       .sell-section{  
+           margin-top: 300px;
+          & div{      
+            width: 80%;
+            margin: 0 auto;
+
+         & h2{
+            text-align: center;
+            padding: 10px;
+            padding-top: 30px;
+        }
+        & img{
+            width: 100%;
+        }
+    }
+} 
+/* --sell section end */
+
+ /* -- featur section start-- */
+
+.featur-section{
+  
+    & strong{
+        text-align: center;
+        display: block;
+                              
+    }
+    .featur-container{
+        margin-top: 36px;
+       display: flex;
+       flex-direction: column;
+        
+        & div{
+            width: 100%;
+        }         
+    }
+  }       
+
+    .featur_btn{ 
+        width: 33%;
+       }
+
+ /* -- featur section end-- */
+
+ /* --Buy section start */
+
+ #buy-section{ 
+    grid-template-columns: auto ;
+
+    .buy_div1, .buy_div2{
+        & div:first-child{
+            margin-top: 15px;
+        }         
+    }
+    .buy_div1, .buy_div2{
+        & p{
+            margin: 0 auto;
+      }  
+     }  
+  }
+    
+/* --Buy section end */
+
+ /* -- com section start -- */
+     
+ .com-section{
+
+    .com-section_container{
+        & p{
+            font-size: 25px;
+        }
+        & button{
+            padding: 5px;
+            width: 36%;
+            display: flex;
+            justify-content: center;
+           
+ }
+}
+/* -- com section end -- */
+ 
+ 
+} 
+        
+          
+        
+
+
+
+
+
+
+
+
+
+   
+           
+        
